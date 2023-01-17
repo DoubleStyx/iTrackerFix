@@ -20,7 +20,7 @@ namespace SU2GaugeGroup
         [HarmonyPatch(typeof(SimpleAvatarProtection), "CanUse")]
         class SimpleAvatarProtection_CanUse_Prefix
         {
-            public static bool Prefix(User user)
+            public bool Prefix(User user)
             {
                 return true; //don't run rest of method
             }
