@@ -6,7 +6,7 @@ using System.Reflection.Emit;
 using System.Linq;
 using System.Reflection;
 
-namespace SU2GaugeGroup
+namespace iTrackerFix
 {
     public class iTrackerFix : NeosMod
     {
@@ -16,7 +16,7 @@ namespace SU2GaugeGroup
         public override string Link => "https://github.com/DoubleStyx/iTrackerFix";
         public override void OnEngineInit()
         {
-            Harmony harmony = new Harmony("net.doublestyx.iTrackerFix");
+            Harmony harmony = new Harmony("net.DoubleStyx.iTrackerFix");
             harmony.PatchAll();
         }
 
